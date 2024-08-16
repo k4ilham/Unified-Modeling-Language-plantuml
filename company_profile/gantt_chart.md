@@ -1,4 +1,22 @@
 @startgantt
+title Project Timeline for Company Profile Website
+
+' Style settings
+skinparam backgroundColor #F0F8FF
+skinparam gantt {
+  BackgroundColor #FFFFFF
+  BorderColor #0000FF
+  BorderThickness 2
+  Task {
+    BackgroundColor #ADD8E6
+    BorderColor #000080
+    FontColor #000000
+  }
+  Dependency {
+    Color #0000FF
+  }
+}
+
 ' Define the project tasks and their durations
 [Project Planning] requires 5 days
 [Requirements Gathering] requires 10 days

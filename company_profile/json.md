@@ -1,19 +1,26 @@
 @startjson
+' Define styles for highlighting
 <style>
-  .h1 {
-    BackGroundColor green
-    FontColor white
+  .highlight1 {
+    BackgroundColor #008000
+    FontColor #FFFFFF
     FontStyle italic
   }
-  .h2 {
-    BackGroundColor red
-    FontColor white
+  .highlight2 {
+    BackgroundColor #FF0000
+    FontColor #FFFFFF
     FontStyle bold
   }
+  .default {
+    BackgroundColor #F0F8FF
+    BorderColor #000000
+  }
 </style>
-#highlight "lastName"
-#highlight "address" / "city" <<h1>>
-#highlight "phoneNumbers" / "0" / "number" <<h2>>
+
+' JSON data with styling
+#highlight "lastName" <<highlight1>>
+#highlight "address" / "city" <<highlight1>>
+#highlight "phoneNumbers" / "0" / "number" <<highlight2>>
 {
   "firstName": "John",
   "lastName": "Smith",

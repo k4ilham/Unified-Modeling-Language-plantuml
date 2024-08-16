@@ -2,8 +2,25 @@
 !define RECTANGLE class
 !define COMPONENT rectangle
 
+' Title and Styles
+title Arsitektur Sistem Website
+skinparam backgroundColor #F0F0F0
+skinparam rectangle {
+  BackgroundColor #D3EAF2
+  BorderColor #007ACC
+}
+skinparam component {
+  BackgroundColor #BFD3C1
+  BorderColor #4F8A10
+}
+skinparam package {
+  BackgroundColor #B0C4DE
+  BorderColor #4682B4
+  FontColor #FFFFFF
+}
+
 ' Business Layer
-package "Business Layer" {
+package "Business Layer" as BL {
     [Customer] as Customer
     [Web Application] as WebApp
 
@@ -11,7 +28,7 @@ package "Business Layer" {
 }
 
 ' Application Layer
-package "Application Layer" {
+package "Application Layer" as AL {
     COMPONENT "Web Server" as WebServer
     COMPONENT "Database Server" as DBServer
 
@@ -20,7 +37,7 @@ package "Application Layer" {
 }
 
 ' Technology Layer
-package "Technology Layer" {
+package "Technology Layer" as TL {
     [Router] as Router
     [Network] as Network
 

@@ -1,29 +1,50 @@
 @startuml
+title Object Diagram
+
+' Define colors
+skinparam backgroundColor #F5F5F5
+
+' Define styles for objects
+skinparam object {
+  BackgroundColor #E0E0E0
+  BorderColor #0000FF
+  FontColor #000000
+}
+
+' Define styles for the title
+skinparam title {
+  BackgroundColor #ADD8E6
+  BorderColor #4682B4
+  FontColor #000080
+}
+
+' Define the objects with custom styles
 object Homepage {
-  + title: String
-  + content: String
+  + Title: String
+  + Content: String
 }
 
 object AboutPage {
-  + title: String
-  + content: String
+  + Title: String
+  + Content: String
 }
 
 object ServicesPage {
-  + title: String
-  + servicesList: List<String>
+  + Title: String
+  + ServicesList: List<String>
 }
 
 object ContactPage {
-  + title: String
-  + contactForm: Form
+  + Title: String
+  + ContactForm: Form
 }
 
 object PortfolioPage {
-  + title: String
-  + projectsList: List<Project>
+  + Title: String
+  + ProjectsList: List<Project>
 }
 
+' Define relationships
 Homepage -- AboutPage : "Navigates to"
 Homepage -- ServicesPage : "Navigates to"
 Homepage -- ContactPage : "Navigates to"

@@ -1,4 +1,37 @@
 @startuml
+title Usecase Diagram
+
+' Define colors
+skinparam backgroundColor #F4F6F9
+
+' Define styles for actors
+skinparam actor {
+  BackgroundColor #E0E0E0
+  BorderColor #9E9E9E
+  FontColor #424242
+}
+
+' Define styles for use cases
+skinparam usecase {
+  BackgroundColor #D0E1F9
+  BorderColor #1E88E5
+  FontColor #0D47A1
+}
+
+' Define styles for arrows
+skinparam Arrow {
+  Color #1E88E5
+  FontColor #0D47A1
+}
+
+' Define styles for title
+skinparam title {
+  BackgroundColor #C5CAE9
+  BorderColor #3F51B5
+  FontColor #1A237E
+}
+
+' Define actors and use cases
 actor "Visitor" as visitor
 actor "Admin" as admin
 actor "Content Manager" as contentManager

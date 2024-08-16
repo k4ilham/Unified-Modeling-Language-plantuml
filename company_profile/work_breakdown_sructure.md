@@ -1,4 +1,24 @@
 @startwbs
+title Work Breakdown Structure
+
+' Define colors
+skinparam backgroundColor #F5F5F5
+
+' Define styles for nodes
+skinparam node {
+  BackgroundColor #E8F5E9
+  BorderColor #4CAF50
+  FontColor #1B5E20
+}
+
+' Define styles for title
+skinparam title {
+  BackgroundColor #C8E6C9
+  BorderColor #66BB6A
+  FontColor #1B5E20
+}
+
+' Define the WBS structure
 * Website Company Profile Project
 ** 1. Project Initiation
 *** 1.1 Define Project Scope
